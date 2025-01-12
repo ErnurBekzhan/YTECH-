@@ -1,0 +1,168 @@
+@media (max-width: 920px) {
+    .main{
+        font-size: 8px;
+        top: 6.5%;
+        left: 55%;
+    }
+    .solution{
+        font-size: 8px;
+        position: absolute;
+        top: 6.5%;
+        left: 68%;
+    }
+    .waterquality{
+        font-size: 8px;
+        position: absolute;
+        top: 6.5%;
+        left: 80%
+    }
+    .YTECH {
+        font-size: xx-small;
+        position: absolute;
+        top : 6.5%;
+        left: 17% ;
+    }
+    .logo{
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 5.5%;
+        left: 7%;
+    }
+    .zad{
+        position: absolute;
+        top: 12%;
+        width:30%;
+        height: 42%;
+        left: 0%;
+        border-radius:0px ;
+    }
+    .spina{
+        position: absolute;
+top: 12%;
+width:39%;
+height:42%;
+left: 0%;
+border-radius: 5px;
+    }
+    .esik{
+        position: absolute;
+        top: 13%;
+        width: 37%;
+        height: 40%;
+
+    }
+    .yes{
+        font-size: 10px;
+        letter-spacing: 1.2px;
+        position: absolute;
+        top: 15%;
+        left: 3.5%;
+    }
+    .sir{
+        font-size: 10px;
+letter-spacing: 1.2px;
+position: absolute;
+top: 15%;
+left: 40%;
+    }
+    .ost{
+        font-size: 7px;
+        width: 35%;
+        height: 10%;
+        position: absolute;
+        top: 17%;
+        left: 3.5%;
+    }
+    .team{
+        font-size: small;
+        position: absolute;
+        top: 18%;
+        left: 46%;
+    }
+    .members{
+        font-size: 12px;
+        width: 43%;
+        position: absolute;
+        top: 21%;
+        left: 46%;
+    }
+    .guys{
+        position: absolute;
+        top: 41%;
+        left: 46%;
+        width: 43%;
+    }
+    footer{
+        width: 50vh;
+        position: absolute;
+        top:55%;
+    }
+    .tiktok{
+        width: 30px;
+        height: 30px;
+        top: 32%;
+    }
+    .tt2{
+        font-size: xx-small;
+        position: absolute;
+        left: 8%;
+        top: 36%;
+    }
+    .abacaba{
+        width: 27px;
+height: 27px;
+top: 48%;
+left:2.5%;
+    }
+    .inst{
+        font-size: xx-small;
+        position: absolute;
+        top: 50.5%;
+        left: 9%;
+    }
+    .nm{
+        width: 5%;
+        position: absolute;
+        top: 65%;
+        left: 3%;
+    }
+    .nomer{
+        font-size: 9px;
+        position: absolute;
+        top: 68%;
+        left: 9%;
+    }   
+    .Ourct{
+        font-size: medium;
+        position: absolute;
+        top: 16%;
+    }
+    .ema{
+        font-size: medium;
+        position: absolute;
+        left: 50%;top: 15%;
+    }
+    .ema2{
+        font-size: 9px;
+        position:absolute;
+        left: 50%;
+    }   
+    .ema3{
+        font-size: 9px;
+position:absolute;
+left: 50%;
+    }
+    *{
+        overflow-x: hidden;
+    }
+    .prikl{
+        opacity: 1;
+        position: absolute;
+        top: 100%;
+        font-family: 'Orbitron',cursive;
+        color: black;
+        text-align: center;
+        left: 45%;
+    }
+}

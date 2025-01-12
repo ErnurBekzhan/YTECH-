@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap'); 
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.zad{
+    background-color: black;
+    position: absolute;
+    width: 46% ;
+    height: 106%;
+    left: 0%;
+    top:18%;
+    border-radius: 2%
+}
+.spina{
+    background-color: black;
+position: absolute;
+width: 4% ;
+height: 106%;
+left: 0%;
+top:18%;
+}
+.yes{
+    color: white;
+    font-size:180%;
+    font-family: 'Orbitron';
+    position: absolute;
+    font-weight: bold;
+    top: 25%;
+    left: 4.5%;
+    letter-spacing: 10px;
+}
+.esik{
+    width: 45%;
+    height: 100%;
+    position: absolute;
+    top: 18%;
+    left:0%;
+    margin-bottom: 25% ;
+}
+.pystoe{
+    height: 150vh;
+}
+.sir{
+    color: black;
+    font-size:180%;
+    font-family: 'Orbitron';
+    position: absolute;
+    font-weight: bold;
+    top: 25%;
+    left: 46.5%;
+    letter-spacing: 10px;
+}
+.ost{
+    color: white;
+    font-family: 'Outfit',cursive;
+    position: absolute;
+    top: 35%;
+    font-weight:500;
+    font-size: 130%;
+    left: 4.5%;
+    letter-spacing: 3px;
+}
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+.logo{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 4.5%;
+    left: 2.5%;
+}
+.YTECH{
+    font-family: 'Orbitron' , cursive ;
+    font-weight: bold;
+    position: absolute;
+    font-size:x-large;
+    left: 7.5% ;
+    top: 6%;
+    color: black ;
+}
+.main{
+    font-family: 'Orbitron' , cursive ;
+    font-weight:bold;
+    position: absolute;
+    top: 7%;
+    font-size: medium;
+    left: 65.4%;
+    color: black;
+}
+.solution{
+    font-family: 'Orbitron' , cursive;
+    font-weight: bold;
+    position: absolute;
+    top: 7%;
+    left: 78%;
+    color: black ;
+    font-size: medium;
+}
+.waterquality{
+    font-family: 'Orbitron' , cursive;
+    font-weight: bold;
+    position: absolute;
+    top: 7%;
+    left: 90%;
+    color: black ;
+    font-size: medium;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color:#CDCDCD;
+}
+.team{
+    color: black;
+    position: absolute;
+    top: 37%;
+    left: 50.5%;
+    font-family: 'Orbitron';
+    font-weight: 500;
+}
+.members{
+    font-family: 'Outfit',cursive;
+    color: black;
+    text-align: left;
+    position: absolute;
+    top:48%;
+    left: 50.6%;
+    font-size: large;
+    font-weight: 400;
+}
+.guys{
+    position: absolute;
+    top: 75%;
+    left: 50.6%;
+    width: 35.9%;
+    height: auto;
+    border: 6% solid;
+    border-color: black;
+    border-radius: 2%;
+}
+footer{
+    background-color: #00080B;
+    width: 120%;
+    height: 25%;
+    position: absolute;
+    left: 0%;
+    top: 129%;
+}
+.tiktok{
+    width: 20;
+    height: 20;
+    position: absolute;
+    top: 30%;
+    left:2%;
+}
+.Ourct{
+    color: white;
+    font-family: 'Outfit',cursive;
+    position:absolute ;
+    font-size: x-large;
+    top: 10%;
+    left: 3%;
+}
+.tt2{
+    color: #FFFFFF;
+    font-size: small;
+    font-family: 'Outfit',cursive;
+    position: absolute;
+    top: 41%;
+    left: 5%;
+    font-weight: bold;
+}
+.tt2:hover{
+    color: #e7e7e7;
+    transition: 0.6s;
+}
+.inst{
+    color: #FFFFFF;
+    font-size: small;
+    font-family: 'Outfit',cursive;
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    font-weight: bold;
+}
+.inst:hover{
+    color: #e7e7e7;
+    transition: 0.6s;
+}
+.nomer{
+    color: #FFFFFF;
+    font-family: 'Outfit',cursive;
+    position: absolute;
+    font-size: small;
+    font-weight: bold;
+    top: 80.5%;
+    left: 5%;
+}
+.nomer:hover{
+    color: #e7e7e7;
+    transition: 0.6;
+}
+.nm{
+    position: absolute;
+    width: 2.3%;
+    top: 75%;
+    left: 2.5%;
+}
+.abacaba{
+    position: absolute;
+    width: 2.3%;
+    top: 55%;
+    left:2.5%
+}
+.ema{
+    color: white;
+    font-family: 'Outfit',cursive;  
+    position:absolute ;
+    font-size: x-large;
+    top: 10%;
+    left: 70%;
+}
+.ema2{
+    color: white;
+font-family: 'Outfit',cursive;  
+position:absolute ;
+font-size:x-small;
+font-weight: bold;
+top: 40%;
+left: 70.1%;
+}
+.ema3{
+    color: white;
+    font-family: 'Outfit',cursive;  
+    position:absolute ;
+    font-size:x-small;
+    font-weight: bold;
+    top: 60%;
+    left: 70.1%;
+}   
+a:hover{
+    color: #CDCDCD;
+    transition: 0.6s;
+}
+@media (max-width: 480px) {
+    header {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    ul {
+        margin-left: 15px;
+    }
+}
+.container {
+    width: 1920px; /* Фиксированная ширина для дизайна */
+    height: 1080px; /* Фиксированная высота для дизайна */
+    background-color: white;
+    border: 1px solid #ccc;
+    transform: scale(1); /* Начальный масштаб */
+    transform-origin: top left; /* Точка масштабирования */
+}
+
+/* Адаптивное масштабирование */
+@media (min-width: 480px) {
+    body {
+        transform: scale(calc(100vw / 1920));
+        transform-origin: top left;
+    }
+}

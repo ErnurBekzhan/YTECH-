@@ -1,0 +1,41 @@
+@media (max-width: 768px) {
+    body {
+      font-size: 14px; /* уменьшение размера шрифта */
+    }
+    header {
+      height: 120vh; /* уменьшение высоты шапки */
+    }
+    .waterbeach {
+      height: 100%; /* корректировка размеров */
+    }
+    .logo {
+      width: 50px;
+      height: 50px;
+      top: 3%; /* изменение позиции */
+      left: 5%;
+    }
+    .YTECH {
+      font-size: large; /* уменьшение размера шрифта */
+      left: 15%;
+    }
+    .aboutus, .solution, .waterquality {
+      font-size: small;
+      left: auto;
+      right: 5%;
+    }
+    .save {
+      font-size: medium;
+      left: 5%;
+    }
+    .more {
+      font-size: small;
+      left: 5%;
+    }
+    .button {
+      width: 200px; /* уменьшение ширины кнопки */
+      font-size: small;
+    }
+    footer {
+      height: auto; /* гибкая высота */
+    }
+  }

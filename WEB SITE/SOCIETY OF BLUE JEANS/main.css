@@ -1,0 +1,61 @@
+html, body {
+    margin: 0;              /* Убираем отступы у HTML и BODY */
+    height: 100%;           /* Устанавливаем высоту для BODY и HTML */
+  }
+  
+  .button {
+    display: flex;           /* Включаем Flexbox */
+    justify-content: center; /* Центрируем по горизонтали */
+    align-items: center;     /* Центрируем по вертикали */           /* Высота контейнера — весь экран */
+  }
+  button{
+    position: absolute;
+    left: 38%;
+    top: 48%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;
+    border-radius: 10px ;
+    color: white;
+    font-size: large;
+  }
+  button:hover{
+    background-color: white;
+    border-color: black;
+    color: black;
+    transition: 0.7s;
+    cursor: pointer;
+  }
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; /* Скрываем скролл */
+  }
+  .container {
+    text-align: center;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .counter {
+    position: fixed;
+    top: 400px;
+    left: 49%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  
+  #confettiCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none; /* Чтобы не мешать кликам по кнопке */
+  }  

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Quality Index</title>
+    <link rel="stylesheet" href="waterquality.css">
+    <link rel="stylesheet" href="waterqualityadapt.css">
+    <link rel="icon" type="image/png" href="Mask group (3).png">
+</head>
+<header>
+    <a href="main.html" target="_blank"><img src="Mask group (3).png" alt="logo" class="logo"></a>
+    <p class="YTECH"><a href="main.html">Y-TECH</a></p>
+</header>
+<body>
+    <a class="main" href="main.html" target="_blank">Main page</a>
+    <a class="aboutus" href="aboutus.html" target="_blank">About us</a>
+    <a class="solution" href="solution.html" target="_blank">Solution</a>
+    <br><br><br><br><br><br>
+
+    <h2 class="wqi">Water Quality Index Calculator</h2>
+    <form id="wqiForm" class="negroni">
+        <label for="temp" id="es">Temperature (°C):</label>
+        <input type="number" class="responsive-input" id="temp" name="temp" required placeholder="Temperature of Water">
+        <br><br>
+        
+        <label for="bod"  id="dob">BOD (mg/L):</label>
+        <input type="number" class="responsive-input" id="bod" name="bod" required placeholder="Biochemical Oxygen Demand">
+        <br><br>
+
+        <label for="tss" class="ta">TSS (mg/L):</label>
+        <input type="number" class="responsive-input" id="tss" name="tss" required placeholder="Total Suspended Solids">
+        <br><br>
+
+        <label for="do" class="gl">DO (mg/L):</label>
+        <input type="number" class="responsive-input" id="do" name="do" required placeholder="Dissolved Oxygen">
+        <br><br>
+
+        <label for="cond" class="co">Conductivity (µS/cm):</label>
+        <input type="number" class="responsive-input" id="cond" name="cond" required placeholder="Conductivity of Water">
+        <br><br>
+
+        <button type="button" onclick="calculateWQI()" class="cwqi" id="chill">Calculate WQI</button>
+    </form>
+
+    <div id="result"></div>
+
+    <script>
+        function calculateWQI() {
+            const temp = parseFloat(document.getElementById("temp").value);
+            const bod = parseFloat(document.getElementById("bod").value);
+            const tss = parseFloat(document.getElementById("tss").value);
+            const doValue = parseFloat(document.getElementById("do").value);
+            const cond = parseFloat(document.getElementById("cond").value);
+
+            const wqi = (bod + tss + (temp / 2) + (cond / 10) - (doValue * 2)) / 5;
+
+            let problemAreas = [];
+            let suggestions = [];
+
+            if (bod > 5) {
+                problemAreas.push("High BOD (excessive organic waste)");
+                suggestions.push("Consider reducing organic waste input into the water.");
+            }
+            if (tss > 100) {
+                problemAreas.push("High TSS (suspended solids)");
+                suggestions.push("Reduce sedimentation and improve filtration systems.");
+            }
+            if (doValue < 5) {
+                problemAreas.push("Low DO (poor oxygenation)");
+                suggestions.push("Increase aeration or reduce organic pollutants to improve oxygen levels.");
+            }
+            if (cond > 500) {
+                problemAreas.push("High conductivity (possible salinity or pollution)");
+                suggestions.push("Address industrial or agricultural runoff contributing to salinity.");
+            }
+            if (temp > 30) {
+                problemAreas.push("High temperature (thermal pollution)");
+                suggestions.push("Reduce thermal pollution by improving cooling systems in nearby industries.");
+            }
+
+            // Determine water quality based on WQI
+            let waterQuality = "Poor";
+            if (wqi <= 50) {
+                waterQuality = "Good";
+            } else if (wqi <= 75) {
+                waterQuality = "Moderate";
+            }
+
+            // Construct result message using template literals
+            let resultMessage = `Calculated WQI: ${wqi.toFixed(2)}<br><strong>Water Quality: ${waterQuality}</strong><br>`;
+
+            if (problemAreas.length > 0) {
+                resultMessage += "<strong>Possible issues:</strong><ul>";
+                problemAreas.forEach(issue => {
+                    resultMessage += `<li>${issue}</li>`;
+                });
+                resultMessage += "</ul>";
+            } else {
+                resultMessage += "<strong>Water quality is good!</strong>";
+            }
+
+            // Adding suggested solutions
+            if (suggestions.length > 0) {
+                resultMessage += "<strong>Suggested solutions:</strong><ul>";
+                suggestions.forEach(solution => {
+                    resultMessage += `<li>${solution}</li>`;
+                });
+                resultMessage += "</ul>";
+            }
+
+            document.getElementById("result").innerHTML = resultMessage;
+        }
+    </script>
+    
+    
+<footer>
+    <div class="social">
+      <h1 class="Ourct">Our contacts</h1>
+      <a target="_blank" href="//www.tiktok.com/@ytech_bil" class="tt"><img src="Component 3.png" alt="tiktok" class="tiktok"></a>
+      <a target="_blank" href="https://www.tiktok.com/@ytech_bil" class="tt2">YTECH_bil</a>
+      <a target="_blank" href="https://www.instagram.com/ytech_bil/" class="inst1"><img src="inst-removebg-preview.png" alt="insagram" class="abacaba"></a>
+      <a target="_blank" href="https://www.instagram.com/ytech_bil/" class="inst">Ytech bil</a>
+      <img src="tele-removebg-preview.png" alt="nomer" class="nm">
+      <p class="nomer">7 707 929 2250</p>
+    </div>
+    <h1 class="ema">Email adress</h1>
+    <a class="ema2" href="https://mail.google.com/mail/u/0/#inbox" target="_blank">ernurbekzhan09@gmail.com</a>
+    <a class="ema3" href="https://mail.google.com/mail/u/0/#inbox" target="_blank">abdulkadyr514@gmail.com</a>
+</footer>
+    <div class="ne"></div>
+  </body>
+</html>

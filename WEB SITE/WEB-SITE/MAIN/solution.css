@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+.logo{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 4.5%;
+    left: 2.5%;
+}
+.YTECH{
+    font-family: 'Orbitron' , cursive ;
+    font-weight: bolder;
+    position: absolute;
+    font-size:x-large;
+    left: 7.5% ;
+    top: 5%;
+    color: black ;
+    text-decoration: none;
+}
+a:hover{
+    color: #cdcdcd;
+    transition:0.6s ;
+}
+@media (max-width: 480px) {
+    header {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    ul {
+        margin-left: 15px;
+    }
+}
+
+/* Планшеты (481px до 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    main {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+/* Старые мониторы (769px до 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    h1 {
+        font-size: 2.2em;
+    }
+
+    h2 {
+        font-size: 1.4em;
+    }
+
+    main {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
+/* Современные мониторы (1025px до 1440px) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    main {
+        padding: 30px;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+}
+
+/* Мониторы 4K и выше (2560px и более) */
+@media (min-width: 2560px) {
+    h1 {
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    main {
+        padding: 40px;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+
+    section {
+        padding: 30px;
+    }
+}
+.aboutus{
+    font-family: 'Orbitron' , cursive ;
+    font-weight:bold;
+    position: absolute;
+    top: 7%;
+    font-size: medium;
+    left: 77.4%;
+    color: black;
+    text-decoration: none;
+}
+.waterquality{
+    font-family: 'Orbitron' , cursive;
+    font-weight: bold;
+    position: absolute;
+    top: 7%;
+    left: 90%;
+    color: white ;
+    font-size: medium;
+    text-decoration: none;
+}
+.main{
+    font-family: 'Orbitron' , cursive ;
+    font-weight:bold;
+    position: absolute;
+    top: 7%;
+    font-size: medium;
+    left: 65.4%;
+    color: black;
+    text-decoration: none;
+}
+.waterquality{
+    font-family: 'Orbitron' , cursive ;
+    font-weight:bold;
+    position: absolute;
+    top: 7%;
+    font-size: medium;
+    left: 90.4%;
+    color: black;
+    text-decoration: none;
+    text-decoration: none;
+}
+.YTECH:hover{
+    color: #cdcdcd;
+    transition: 0.6s;
+}
+footer{
+    background-color: #00080B;
+    width: 120%;
+    height: 30%;
+    position: absolute;
+    left: 0%;
+    top: 200%;
+}
+.tiktok{
+    width: 20;
+    height: 20;
+    position: absolute;
+    top: 30%;
+    left:2%;
+}
+.Ourct{
+    color: white;
+    font-family: 'Outfit',cursive;
+    position:absolute ;
+    font-size: x-large;
+    top: 5%;
+    left: 3%;
+}
+.tt2{
+    color: #FFFFFF;
+    font-size: small;
+    font-family: 'Outfit',cursive;
+    position: absolute;
+    top: 39.5%;
+    left: 5%;
+    font-weight: bold;
+    text-decoration: none;
+}
+.tt2:hover{
+    color: #e7e7e7;
+    transition: 0.6s;
+}
+.inst{
+    color: #FFFFFF;
+    font-size: small;
+    font-family: 'Outfit',cursive;
+    position: absolute;
+    top: 58.5%;
+    left: 5%;
+    font-weight: bold;
+    text-decoration: none;
+}
+.inst:hover{
+    color: #e7e7e7;
+    transition: 0.6s;
+}
+.nomer{
+    color: #FFFFFF;
+    font-family: 'Outfit',cursive;
+    position: absolute;
+    font-size: small;
+    font-weight: bold;
+    top: 78%;
+    left: 5%;
+}
+.nomer:hover{
+    color: #e7e7e7;
+    transition: 0.6;
+}
+.nm{
+    position: absolute;
+    width: 2.3%;
+    top: 75%;
+    left: 2.5%;
+}
+.ema{
+    color: white;
+    font-family: 'Outfit',cursive;  
+    position:absolute ;
+    font-size: x-large;
+    top: 10%;
+    left: 70%;
+    text-decoration: none;
+}
+.ema2{
+    color: white;
+font-family: 'Outfit',cursive;  
+position:absolute ;
+font-size:x-small;
+font-weight: bold;
+top: 40%;
+left: 70.1%;
+text-decoration: none;
+}
+.ema3{
+    color: white;
+    font-family: 'Outfit',cursive;  
+    position:absolute ;
+    font-size:x-small;
+    font-weight: bold;
+    top: 60%;
+    left: 70.1%;
+    text-decoration: none;
+}
+.cwqi{
+    width: 250px;
+
+}
+.abacaba{
+    width: 7vh;
+    height: 7vh;
+    position: absolute;
+    top:52%;
+    left: 2.2%;
+}
+a:hover{
+    color: #CDCDCD;
+    transition: 0.6s;
+}
+@media (max-width: 480px) {
+    header {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    ul {
+        margin-left: 15px;
+    }
+}
+
+/* Планшеты (481px до 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    main {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+/* Старые мониторы (769px до 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    h1 {
+        font-size: 2.2em;
+    }
+
+    h2 {
+        font-size: 1.4em;
+    }
+
+    main {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
+/* Современные мониторы (1025px до 1440px) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    main {
+        padding: 30px;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+}
+
+/* Мониторы 4K и выше (2560px и более) */
+@media (min-width: 2560px) {
+    h1 {
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    main {
+        padding: 40px;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+
+    section {
+        padding: 30px;
+    }
+}

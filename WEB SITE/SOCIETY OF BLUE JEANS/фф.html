@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Кнопка с конфетти и ачивками</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .container {
+      text-align: center;
+      position: relative;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .counter {
+      position: fixed;
+      top: 250px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .achievement {
+      position: fixed;
+      top: 400px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #FFD700;
+      color: black;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 10px 20px;
+      border-radius: 5px;
+      animation: fadeOut 3s forwards;
+    }
+
+    @keyframes fadeOut {
+      0% { opacity: 1; }
+      80% { opacity: 1; }
+      100% { opacity: 0; }
+    }
+
+    .button {
+      width: 150px;
+      height: 50px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #0056b3;
+    }
+
+    #confettiCanvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="counter">Количесто девушек которые бросили аби: -<span id="count">0</span></div>
+    <button class="button" onclick="handleClick()">1 клик = -1 девушка</button>
+    <canvas id="confettiCanvas"></canvas>
+  </div>
+
+  <!-- Подключение библиотеки конфетти -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+  <script>
+    let count = 0;
+
+    // Массив с достижениями
+    const achievements = [ 10 , 50 , 100, 150 , 1000, 10000, 50000];
+
+    // Обработчик клика
+    function handleClick() {
+      count++;
+      document.getElementById("count").innerText = count;
+
+      // Проверяем достижения
+      checkAchievements();
+
+      // Запускаем конфетти
+      launchConfetti();
+    }
+
+    // Проверка на достижения
+    function checkAchievements() {
+      if (achievements.includes(count)) {
+        showAchievement(`Поздравляем! Вы достигли ${count} кликов! Ернур краш школы а аби изгой`);
+      }
+    }
+
+    // Функция для отображения ачивки
+    function showAchievement(message) {
+      const achievementDiv = document.createElement('div');
+      achievementDiv.className = 'achievement';
+      achievementDiv.innerText = message;
+
+      document.body.appendChild(achievementDiv);
+
+      // Удаляем ачивку через 3 секунды
+      setTimeout(() => {
+        achievementDiv.remove();
+      }, 3000);
+    }
+
+    // Запуск конфетти
+    function launchConfetti() {
+      const canvas = document.getElementById('confettiCanvas');
+      const confettiInstance = confetti.create(canvas, { resize: true });
+
+      confettiInstance({
+        particleCount: 150,
+        spread: 70,
+        origin: { x: Math.random(), y: Math.random() * 1 }
+      });
+    }
+  </script>
+</body>
+</html>
